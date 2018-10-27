@@ -1,6 +1,6 @@
 defmodule OpenapiMergerElixir.Files do
   def source_files(source_path) do
-    wildcard = Path.join(source_path, "/**/*.{yml,yaml}")
+    wildcard = Path.join(source_path, "/**/*.{yml,yaml,json}")
     files = Path.wildcard(wildcard)
 
     if Enum.any?(files) do
