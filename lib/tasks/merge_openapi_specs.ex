@@ -13,7 +13,7 @@ defmodule Mix.Tasks.MergeOpenapiSpecs do
     options = task_arguments()
 
     if valid_options?(options) do
-      OpenapiMergerElixir.merge_openapi_specs(options[:source], options[:dest])
+      OpenapiMerger.merge_openapi_specs(options[:source], options[:dest])
     else
       IO.puts(@invalid_options_message)
     end

@@ -1,4 +1,6 @@
-defmodule OpenapiMergerElixir.Files do
+defmodule OpenapiMerger.Files do
+  @moduledoc false
+
   def source_files(source_path) do
     wildcard = Path.join(source_path, "/**/*.{yml,yaml,json}")
     files = Path.wildcard(wildcard)

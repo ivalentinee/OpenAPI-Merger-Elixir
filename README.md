@@ -7,7 +7,7 @@ Add to your `mix.exs`:
 ```elixir
 def deps do
   [
-    {:openapi_merger_elixir, github: "vemperor/OpenAPI-Merger-Elixir"}
+    {:openapi_merger, "0.1.0"}
   ]
 end
 ```

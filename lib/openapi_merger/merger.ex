@@ -1,4 +1,6 @@
-defmodule OpenapiMergerElixir.Merger do
+defmodule OpenapiMerger.Merger do
+  @moduledoc false
+
   def merge(paths) do
     Application.ensure_all_started(:yaml_elixir)
 
